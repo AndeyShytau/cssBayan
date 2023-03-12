@@ -1,0 +1,10 @@
+ul{
+    padding-left: 0;
+}
+
+.item{
+    list-style-type: none;
+    text-align: center;
+    border: solid 1px black;
+}
+
