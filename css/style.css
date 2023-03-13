@@ -1,10 +1,160 @@
-ul{
-    padding-left: 0;
+.wraper {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    width: 90%;
+    margin: auto;
+
 }
 
-.item{
-    list-style-type: none;
-    text-align: center;
-    border: solid 1px black;
+img {
+    width: 50%;
+    max-height: 70vh;
+    object-fit: cover;
+    object-position: top;
+    transition: 2s;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.imgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wraper>div {
+    /*     border: dotted 1px red; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
+
+.text {
+    display: inline-block;
+    transition: 1s;
+    cursor: default;
+}
+
+.plus1,
+.plus2,
+.plus3,
+.plus4,
+.plus5 {
+    float: right;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.block1:hover .text,
+.block1:hover .plus1 {
+    transform: scale(1.2);
+}
+
+.block2:hover .text,
+.block2:hover .plus2 {
+    transform: scale(1.2);
+}
+
+.block3:hover .text,
+.block3:hover .plus3 {
+    transform: scale(1.2);
+}
+
+.block4:hover .text,
+.block4:hover .plus4 {
+    transform: scale(1.2);
+}
+
+.block5:hover .text,
+.block5:hover .plus5 {
+    transform: scale(1.2);
+}
+
+
+.img1 {
+    height: 0px;
+}
+
+#p1:target,
+#p2:target,
+#p3:target,
+#p4:target,
+#p5:target {
+    height: 70vh;
+}
+
+@media(max-width:1140px) {
+    .wraper>div {
+        font-size: 28px;
+    }
+
+    #p1:target,
+    #p2:target,
+    #p3:target,
+    #p4:target,
+    #p5:target {
+        height: 55vh;
+    }
+
+    img {
+        width: 60%;
+    }
+
+}
+
+@media(max-width:744px) {
+    .wraper>div {
+        font-size: 24px;
+    }
+
+    #p1:target,
+    #p2:target,
+    #p3:target,
+    #p4:target,
+    #p5:target {
+        height: 45vh;
+    }
+
+    img {
+        width: 70%;
+    }
+
+}
+
+@media(max-width:420px) {
+    .wraper>div {
+        font-size: 20px;
+    }
+
+    #p1:target,
+    #p2:target,
+    #p3:target,
+    #p4:target,
+    #p5:target {
+        height: 40vh;
+    }
+
+    img {
+        width: 70%;
+    }
+
+}
+
+/* #p2:target {
+    height: 220px;
+}
+
+#p3:target {
+    height: 220px;
+}
+
+#p4:target {
+    height: 220px;
+}
+
+#p5:target {
+    height: 220px;
+} */
